@@ -72,7 +72,6 @@ img {
 
 .acerca-de h1 {
   font-size: 50px;
-  margin-left: 100px;
   font-style: italic;
   display: flex;
   align-items: center;
@@ -138,54 +137,21 @@ h3 {
 }
 
 .episodios {
-  background: #171717;
-  max-width: 1200px;
-  margin: 30px auto;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.episodios a{
-  width: 0;
-}
-
 .episodios h1 {
-  grid-column: 1 / -1;
   font-size: 50px;
   font-style: italic;
   color: white;
 }
 
-.contenedor-temp {
-  margin: 30px;
-}
-
-.episodios p {
-  color: white;
-}
-
-.episodios a {
-  color: #171717;
-}
-
-.btn {
-  margin: 15px;
-  padding: 15px;
-  border: none;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background: #a5a5a5;
-}
-
-
 .temporada {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   margin: 20px;
 }
 
@@ -292,8 +258,7 @@ h3 {
     grid-template-columns: 100%;
   }
 
-  .episodios {
-    grid-template-columns: 1fr 1fr;
+  .temporada {
+    grid-template-columns: 100%;
   }
-
 }
