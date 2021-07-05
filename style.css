@@ -16,6 +16,8 @@ a {
 }
 
 .navegation {
+  position: fixed;
+  background: #1717177a;
   width: 100%;
   display: grid;
   grid-template-columns: 175px 1fr;
@@ -55,10 +57,13 @@ img {
 
 .acerca-de {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   background: white;
-  margin: 0;
-  padding: 50px;
+}
+
+.acerca-de .contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 90px;
 }
 
 .acerca-de p {
@@ -95,7 +100,7 @@ img {
   font-size: 50px;
   font-style: italic;
   display: flex;
-  margin-top: 50px;
+  margin-top: 90px;
   align-items: center;
   justify-content: center;
   color: white;
@@ -145,6 +150,10 @@ h3 {
   font-size: 50px;
   font-style: italic;
   color: white;
+}
+
+.titulo-seccion {
+  margin-top: 90px;
 }
 
 .temporada {
@@ -244,7 +253,7 @@ h3 {
     padding: 15px;
   }
 
-  .acerca-de {
+  .acerca-de .contenedor {
     grid-template-columns: 100%;
   }
 
@@ -255,7 +264,7 @@ h3 {
     padding-bottom: 15px;
   }
 
-  .acerca-de p {
+  .acerca-de .contenedor p {
     margin-left: 0;
     margin-top: 15px;
   }
