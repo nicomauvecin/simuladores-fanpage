@@ -55,7 +55,6 @@ img {
 
 .acerca-de {
   display: grid;
-  grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
   background: white;
   margin: 0;
@@ -250,10 +249,17 @@ h3 {
   }
 
   .acerca-de h1 {
+    font-size: 32px;
     border-right: none;
     border-bottom: 1px solid #171717;
     padding-bottom: 15px;
   }
+
+  .acerca-de p {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
   .personaje {
     grid-template-columns: 100%;
   }
