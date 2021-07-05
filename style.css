@@ -203,6 +203,11 @@ h3 {
   .navegation {
     display: grid;
     grid-template-columns: 100%;
+    padding: 10px;
+  }
+
+  .header img {
+    margin-top: 78px;
   }
   .contenedor-navbar {
     display: grid;
