@@ -31,8 +31,8 @@
           <img src="./assets/simuladores.gif" alt="" />
         </header>
       </div>
-      <section class="acerca-de">
-        <a name="acerca-de"></a>
+      <section class="acerca-de" id="acerca-de">
+        <div class="contenedor">
         <h1>Acerca de...</h1>
         <p>
           Los simuladores es una serie de televisión argentina cuya trama gira
@@ -50,9 +50,9 @@
           también en el portal de internet de Telefe. Es considerada en
           ocasiones como la mejor serie argentina de todos los tiempos.
         </p>
+      </div>
       </section>
-      <section class="personajes">
-        <a name="personajes"></a>
+      <section class="personajes" id="personajes">
         <h1><span>Personajes</span></h1>
         <div class="personaje">
           <div class="datos">
@@ -171,8 +171,7 @@
           </div>
         </div>
       </section>
-      <section class="episodios">
-        <a name="episodios"></a>
+      <section class="episodios" id="episodios">
         <h1>Episodios</h1>
         <div class="temporada">
           <h1>Temporada 1</h1>
@@ -735,7 +734,8 @@
       const toggle = document.querySelector(".toggle");
       const navul = document.querySelector(".menu-list");
 
-      toggle.addEventListener("click", () => {
+      toggle.addEventListener("click", (e) => {
+        e.preventDefault();
         navul.classList.toggle("open");
       });
     </script>
