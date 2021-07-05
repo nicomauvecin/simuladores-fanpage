@@ -1,0 +1,294 @@
+body {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+}
+
+.navegation .toggle {
+  display: none;
+}
+
+.navegation {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 175px 1fr;
+  align-items: center;
+  grid-gap: 5px;
+}
+
+img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navegation .logo {
+  padding-left: 25px;
+  opacity: 75%;
+}
+
+.navegation ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  text-decoration: none;
+  align-items: center;
+}
+
+.navegation li {
+  margin: 15px;
+}
+.navegation li a {
+  padding: 5px;
+}
+
+.navegation li a:hover {
+  background: #494949;
+}
+
+.acerca-de {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background: white;
+  margin: 0;
+  padding: 50px;
+}
+
+.acerca-de p {
+  margin-left: 30px;
+}
+
+.acerca-de h1 {
+  font-size: 50px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #171717;
+}
+
+.personajes {
+  display: grid;
+}
+
+.personaje {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 1200px;
+  margin: 15px auto;
+  border-bottom: 1px solid white;
+  padding: 0 15px;
+}
+
+.personajes h1 {
+  font-size: 50px;
+  font-style: italic;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.personaje img {
+  border-radius: 100%;
+  max-width: 300px;
+}
+
+.personaje p,
+h2,
+h3 {
+  color: white;
+}
+
+.datos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.datos h2 {
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.datos h3 {
+  font-size: 10px;
+  font-style: italic;
+}
+
+.descripcion {
+  margin: 15px;
+  padding: 5px;
+}
+
+.episodios {
+  background: #171717;
+  max-width: 1200px;
+  margin: 30px auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.episodios a{
+  width: 0;
+}
+
+.episodios h1 {
+  grid-column: 1 / -1;
+  font-size: 50px;
+  font-style: italic;
+  color: white;
+}
+
+.contenedor-temp {
+  margin: 30px;
+}
+
+.episodios p {
+  color: white;
+}
+
+.episodios a {
+  color: #171717;
+}
+
+.btn {
+  margin: 15px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #a5a5a5;
+}
+
+
+.temporada {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: 20px;
+}
+
+.temporada h1 {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+  grid-gap: 20px;
+  color: white;
+  font-size: 32px;
+}
+
+.episodio {
+  background: white;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.episodio h2,
+.episodio h3,
+.episodio p {
+  background: white;
+  color: #171717;
+}
+
+.footer {
+  display: grid;
+  justify-content: center;
+  background: white;
+}
+
+.footer a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1000px) {
+  .navegation {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .contenedor-navbar {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    align-items: center;
+  }
+
+  .navegation .logo {
+    max-width: 200px;
+  }
+  .contenedor-toggle {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+  }
+
+  .navegation .toggle {
+    display: flex;
+    font-size: 32px;
+  }
+
+  .navegation ul {
+    display: none;
+  }
+
+  .navegation ul.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-list li {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-list li a {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .acerca-de {
+    grid-template-columns: 100%;
+  }
+
+  .acerca-de h1 {
+    border-right: none;
+    border-bottom: 1px solid #171717;
+    padding-bottom: 15px;
+  }
+  .personaje {
+    grid-template-columns: 100%;
+  }
+
+  .episodios {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
