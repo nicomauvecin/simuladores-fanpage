@@ -85,18 +85,21 @@ img {
 
 .personajes {
   display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .personaje {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 1fr;
   max-width: 1200px;
-  margin: 15px auto;
-  border-bottom: 1px solid white;
+  margin: 15px 15px;
+  border: 2px solid white;
+  border-radius: 5px;
   padding: 0 15px;
 }
 
 .personajes h1 {
+  grid-column: 1 / -1;
   font-size: 50px;
   font-style: italic;
   display: flex;
@@ -158,8 +161,8 @@ h3 {
 
 .temporada {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 30px;
+  grid-template-columns: 400px 400px 400px;
   margin: 20px;
 }
 
@@ -175,7 +178,7 @@ h3 {
 
 .episodio {
   background: white;
-  padding: 10px;
+  padding: 1px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -187,6 +190,7 @@ h3 {
 .episodio p {
   background: white;
   color: #171717;
+  padding: 0 5px;
 }
 
 .footer {
@@ -276,6 +280,10 @@ h3 {
 
   .personaje {
     grid-template-columns: 100%;
+  }
+
+  .personajes {
+    grid-template-columns: 1fr;
   }
 
   .temporada {
